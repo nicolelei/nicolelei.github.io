@@ -241,9 +241,12 @@
   <div class="article-entry" itemprop="articleBody">
     
     <h2 id="1-原生页面跳转"><a href="#1-原生页面跳转" class="headerlink" title="1. 原生页面跳转"></a>1. 原生页面跳转</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/open">window.open打开新窗口</a></li>
-<li>使用window.location的assign、href和replace进行页面跳转，页面都会重新加载；replace与assign() 方法不同的是，调用 replace() 方法后，当前页面不会保存到会话历史中（session History），这样，用户点击回退按钮时，将不会再跳转到该页面。</li>
-<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/History">History 接口允许操作浏览器的曾经在标签页或者框架里访问的会话历史记录。</a></li>
+<li>使用<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/open">window.open打开新窗口</a></li>
+<li>使用<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Location">Location</a>下的href、assign()和replace()进行页面跳转，页面数据都会重新加载；replace()方法与assign()方法不同的是，调用replace()方法后，当前页面不会保存到会话历史中（session History），这样用户点击回退按钮时，将不会再跳转到该页面。</li>
+</ul>
+<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">location.<span class="property">href</span> = <span class="string">&#x27;https://developer.mozilla.org/zh-CN/docs/Web/API/Location/reload&#x27;</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="property">location</span>.<span class="title function_">assign</span>(<span class="string">&#x27;https://developer.mozilla.org/zh-CN/docs/Web/API/Location/reload&#x27;</span>);</span><br><span class="line"><span class="variable language_">window</span>.<span class="property">location</span>.<span class="title function_">replace</span>(<span class="string">&#x27;https://developer.mozilla.org/en-US/docs/Web/API/Location/reload&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/History">History</a> 接口允许操作浏览器的曾经在标签页或者框架里访问的会话历史记录。</li>
 </ul>
     
     <a class="article-more-a" href="/2022/03/13/web-page-forward/#more">more >></a>
