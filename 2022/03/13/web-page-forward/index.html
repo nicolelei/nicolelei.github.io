@@ -18,7 +18,7 @@
 <meta property="og:description" content="1. 原生页面跳转 使用window.open打开新窗口 使用Location下的href、assign()和replace()进行页面跳转，页面数据都会重新加载；replace()方法与assign()方法不同的是，调用replace()方法后，当前页面不会保存到会话历史中（session History），这样用户点击回退按钮时，将不会再跳转到该页面。  例子  123location.hre">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-03-13T15:23:36.000Z">
-<meta property="article:modified_time" content="2022-03-15T13:22:09.265Z">
+<meta property="article:modified_time" content="2022-03-15T15:30:58.485Z">
 <meta property="article:author" content="Nicole.Lei">
 <meta property="article:tag" content="javascript">
 <meta property="article:tag" content="router">
@@ -240,7 +240,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">344字</span>
+      <span class="post-count">327字</span>
     </span>
   </span>
 
@@ -272,16 +272,14 @@
 <h4 id="例子-1"><a href="#例子-1" class="headerlink" title="例子"></a>例子</h4>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">history.<span class="title function_">pushState</span>(&#123;<span class="attr">name</span>:<span class="string">&#x27;123&#x27;</span>&#125;, <span class="string">&#x27;hhhhhh&#x27;</span>, <span class="string">&#x27;https://developer.mozilla.org/zh-CN/docs/Web/API/Location/reload&#x27;</span>);</span><br><span class="line">history.<span class="title function_">replaceState</span>(&#123;<span class="attr">name</span>:<span class="string">&#x27;123&#x27;</span>&#125;, <span class="string">&#x27;hhhhhh&#x27;</span>, <span class="string">&#x27;https://developer.mozilla.org/zh-CN/docs/Web/API/Location/reload&#x27;</span>);</span><br></pre></td></tr></table></figure>
 
 <h2 id="2-React页面跳转"><a href="#2-React页面跳转" class="headerlink" title="2.React页面跳转"></a>2.React页面跳转</h2><ul>
-<li>Umi history <ul>
-<li><a target="_blank" rel="noopener" href="https://umijs.org/zh-CN/config#history">https://umijs.org/zh-CN/config#history</a></li>
+<li>Umi <a target="_blank" rel="noopener" href="https://umijs.org/zh-CN/config#history">history</a> <ul>
 <li>使用replace()替换堆栈中的当前项。</li>
 <li>使用push()将新条目推送到历史堆栈。</li>
 </ul>
 </li>
 </ul>
 <h2 id="3-VUE页面跳转"><a href="#3-VUE页面跳转" class="headerlink" title="3.VUE页面跳转"></a>3.VUE页面跳转</h2><ul>
-<li>不同的历史模式,hash和history<ul>
-<li><a target="_blank" rel="noopener" href="https://router.vuejs.org/zh/guide/essentials/history-mode.html">https://router.vuejs.org/zh/guide/essentials/history-mode.html</a></li>
+<li><a target="_blank" rel="noopener" href="https://router.vuejs.org/zh/guide/essentials/history-mode.html">不同的历史模式</a>,hash和history<ul>
 <li>push:通过在历史堆栈中推送一个 entry，以编程方式导航到一个新的 URL。</li>
 <li>replace:通过替换历史堆栈中的当前 entry，以编程方式导航到一个新的 URL。</li>
 </ul>
